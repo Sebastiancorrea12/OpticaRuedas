@@ -14,8 +14,7 @@ body{
                          "footer footer footer footer";
 }
 header{
-    padding-top: 50px;
-    grid-area: header;
+    grid-area: header;   
 }
 header h3{
     padding-left: 120px;
@@ -26,34 +25,49 @@ header h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
+       
 }
+
 .navegador {
-    grid-area: nav;
     background-color: rgb(255, 255, 255);
     padding: 15px;
     box-shadow: 4px 4px 6px 0px rgb(236, 235, 235);
-    width: 100%;
+    width: 100%;   
     position: fixed;
     z-index: 10;
+    
 }
 
-.navegador > ul > li > a {
+
+.navegador li a {
     text-decoration: none;
-    display: block;
     color: rgb(74, 88, 100);
     font-size: 20px;
     padding: 20px;
+    list-style-type: none;  
 }
 .logo img{
     width: 80px;
     height: 80px
+
+}
+.navegador .menuHamburguesa{
+    display: none;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+    
 }
 
-.contenedor-carrusel{
+/*carrusel*/
+.imagen-carrusel{
+    width: 1200px;
+    height: 200px;
+}
+ .contenedor-carrusel{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 100px;
 }
 .carrusel{
     width: 90%;
@@ -61,7 +75,7 @@ header h3{
     background-size: cover ;
     height: 250px; 
     background-position: center;
-}
+} 
 
 /* CONTACTOS*/
 .titulo-contacto{
@@ -153,7 +167,9 @@ form button{
 main{
     display: flex;
     grid-area: main;
+    flex-direction: column;
 }
+/*Filtros*/
 .filtros{
     padding: 5px;
     height: 60px;
@@ -162,7 +178,11 @@ main{
     margin: 20px;
     list-style-type: none;
     font-size: 20px;
-    
+}
+.filtros .filtroTelefono{
+    display: none;
+    font-size: 20px;
+    color: rgb(7,7,7);
 }
 .filtros li{
     margin: 10px; 
@@ -221,3 +241,53 @@ footer p{
     height: 300px; 
     background-position: center;
 }
+/*Comence con media query*/ 
+@media (max-width:576px) {
+ body{
+   grid-auto-rows: 80px auto auto 100px;
+   grid-template-areas: "nav nav nav nav"
+                        "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+.navegador .menuHamburguesa{
+    display: block;
+}
+.navegador ul{
+    position: fixed;
+    top: 59px;
+    left: -300px;
+    flex-direction: column;
+    background-color:  rgb(245, 244, 244);
+    width: 250px;
+    height: 100vh;
+    justify-content: flex-start;
+    transition: .5s;
+    align-items: center;
+}
+.navegador ul li{
+    padding: 25px;
+    
+}
+.navegador .menuHamburguesa:hover + ul{
+    left: 0px;
+}
+.navegador ul:hover{
+    left: 0px;
+
+}
+
+}
+@media (max-width:1100px){
+    .carrusel{
+        background-image: url(../img/Carrusel-telefonos.jpg);
+    }
+    .contenedor-carrusel{
+        margin-top: 10px;
+    }
+    footer i{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+    
