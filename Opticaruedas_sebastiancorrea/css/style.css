@@ -148,6 +148,7 @@ form button{
 .imagenes-inicio > div:hover{
     transition: .5s;
     box-shadow: 4px 4px 4px rgb(236, 236, 236);
+    z-index: 2;
 }
 .imagenes-inicio > div button{
     padding: 10px;
