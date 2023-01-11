@@ -1,0 +1,15 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: arial;
+}
+body {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 100px auto 1fr 100px;
+	grid-template-areas: "nav nav nav nav"
+                       "header header header header"
+                       "main main main main"
+                       "footer footer footer footer";
+}

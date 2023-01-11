@@ -1,0 +1,31 @@
+.navegador > ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navegador {
+	background-color: $color-principal;
+	padding: 15px;
+	box-shadow: 4px 4px 6px 0px rgb(236, 235, 235);
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	li a {
+		text-decoration: none;
+		color: rgb(74, 88, 100);
+		font-size: 20px;
+		padding: 20px;
+		list-style-type: none;
+	}
+	
+}
+.menuHamburguesa {
+	display: none;
+	color: rgb(7, 7, 7);
+	font-size: 25px;
+	&:hover + ul {
+		left: 0px;
+	}
+}

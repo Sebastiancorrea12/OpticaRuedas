@@ -1,0 +1,43 @@
+header {
+	grid-area: header;
+	h3 {
+		padding-left: 120px;
+	}
+}
+.imagen-carrusel {
+	width: 1200px;
+	height: 200px;
+}
+.contenedor-carrusel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+.carrusel {
+	margin-top: 30px;
+	width: 90%;
+	background-image: url(/Opticaruedas_sebastiancorrea/img/carrusel.webp);
+	background-size: cover ;
+	height: 250px;
+	background-position: center;
+	&-recetados {
+		margin-top: 30px;
+		width: 90%;
+		background-image: url(/Opticaruedas_sebastiancorrea/img/ImagenCarruselRecetados3.jpg);
+		background-size: cover ;
+		height: 250px;
+		background-position: center;
+	}
+	&-contactologia {
+		margin-top: 30px;
+		width: 90%;
+		background-image: url(/Opticaruedas_sebastiancorrea/img/CarruselLentesDeContacto.jpg);
+		background-size: cover ;
+		height: 300px;
+		background-position: center;
+	}
+}
+.contenedor-carrusel {
+	margin-top: 10px;
+}

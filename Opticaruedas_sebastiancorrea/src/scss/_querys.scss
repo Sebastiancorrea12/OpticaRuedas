@@ -1,0 +1,37 @@
+@media (max-width:576px){
+	body{
+		grid-auto-rows: 80px auto auto 100px;
+		
+		grid-template-areas: "nav nav nav nav"
+		"header header header header"
+		"main main main main"
+		"footer footer footer footer";
+	}
+    .menuHamburguesa {
+		display: block;
+	}
+	ul {
+		position: fixed;
+		top: 59px;
+		left: -300px;
+		flex-direction: column;
+		background-color: rgb(245, 244, 244);
+		width: 250px;
+		height: 100vh;
+		justify-content: flex-start;
+		transition: .5s;
+		align-items: center;
+		li {
+			padding: 25px;
+		}
+		&:hover {
+			left: 0px;
+		}
+	}
+}
+@media (max-width:1100px){
+	.carrusel{ 
+
+		background-image: url(/Opticaruedas_sebastiancorrea/img/Carrusel-telefonos.jpg);
+	}
+}
