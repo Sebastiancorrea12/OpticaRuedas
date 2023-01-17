@@ -15,29 +15,20 @@ header {
 	margin-top: 100px;
 }
 .carrusel {
-	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	object-fit: cover;
+	&-img{
+	margin-top: 40px;
 	width: 90%;
-	background-image: url(/img/carrusel.webp);
-	background-size: cover ;
-	height: 250px;
-	background-position: center;
-	&-recetados {
-		margin-top: 30px;
-		width: 90%;
-		background-image: url(/img/ImagenCarruselRecetados3.jpg);
-		background-size: cover ;
-		height: 250px;
-		background-position: center;
+	height: 50%;
+	
 	}
-	&-contactologia {
-		margin-top: 30px;
-		width: 90%;
-		background-image: url(/img/CarruselLentesDeContacto.jpg);
-		background-size: cover ;
-		height: 300px;
-		background-position: center;
-	}
+
 }
+.carrusel-2{
+	display: none;
+}	
 .contenedor-carrusel {
 	margin-top: 10px;
 }

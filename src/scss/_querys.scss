@@ -31,7 +31,9 @@
 }
 @media (max-width:1100px){
 	.carrusel{ 
-
-		background-image: url(/Opticaruedas_sebastiancorrea/img/Carrusel-telefonos.jpg);
+		display: none;
+	}
+	.carrusel-2{
+		display: block;
 	}
 }
