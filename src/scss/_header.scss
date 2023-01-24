@@ -8,20 +8,22 @@ header {
 	width: 1200px;
 	height: 200px;
 }
-.contenedor-carrusel {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-top: 100px;
-}
+// .contenedor-carrusel {
+// 	width: 100%;
+// 	display: flex;
+// 	justify-content: center;
+// 	margin-top: 100px;
+// }
 .carrusel {
 	display: flex;
 	justify-content: center;
 	object-fit: cover;
+	width: 1200px;
+	height: 300px;
 	&-img{
 	margin-top: 40px;
-	width: 90%;
-	height: 50%;
+	width: 1200px;
+	height: 300px;
 	
 	}
 
