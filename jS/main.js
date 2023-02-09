@@ -183,9 +183,11 @@ function precio(marca){
                 alert("El monto con el que deseas pagar no es suficiente para realizar la compra.");
            }
      }else if(pago == 2){
-
+        alert("Envia el pago al alias Optica.ruedas y envianos el comprobante de pago a travez de WhatsApp\nLuego de esto podes pasar a retirar tu producto por el local cuando lo desees.")
+        
      }else if(pago == 3){
-
+        let numCard = prompt("Ingresa el número de tu tarjeta de débito, no compartiremos estos datos con nadie.")
+        alert("Tu tarjeta nº "+ numCard +"fue validada con exito, gracias por la compra y disfruta de tu producto. Siempre cuidando tu vista.")
      }
 }
 
